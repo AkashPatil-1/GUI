@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<div class="container" style="margin:10px">
+    <h1 class="text-center" style="text-align:center"> Register Here !! </h1>
+</div>
+<div style="text-align:center">
+    <form th:action="/process_register">
+        <div style="margin:10px">
+            <label style="font:14px; font-weight:bold">Email: </label>
+            <input type="email" name="" th:field="@{user}" required>
+        </div>
+
+        <div style="margin:10px">
+            <label style="font:14px; font-weight:bold">Password:</label>
+            <input type="password" name="" th:field="@{password}" required>
+        </div>
+
+        <div style="margin:10px">
+            <label style="font:14px; font-weight:bold">First Name: </label>
+            <input type="text" name="" th:field="@{fname}" required>
+        </div>
+
+        <div style="margin:10px">
+            <label style="font:14px; font-weight:bold">Last Name:</label>
+            <input type="text" name="" th:field="@{lname}" required>
+        </div>
+
+        <div style="text-align:center">
+            <button type="submit" style="background-color:skyblue; font-weight:bold; border-radius:20px;">Sign up
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
